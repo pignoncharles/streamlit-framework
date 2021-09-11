@@ -1,31 +1,33 @@
 import streamlit as st
+
+
+import streamlit as st
+# To make things easier later, we're also importing numpy and pandas for
+# working with sample data.
+import numpy as np
+import pandas as pd
+# import time
+
+# import matplotlib.pyplot as plt
+from alpha_vantage.timeseries import TimeSeries
+
+# import altair as alt
+
+
+import requests
+
+
 st.write("TEST APP INTO HEROKU")
 
+from boto.s3.connection import S3Connection
+key = S3Connection(os.environ['ALPHA_ADVANTAGE_API'])
 
-# import streamlit as st
-# # To make things easier later, we're also importing numpy and pandas for
-# # working with sample data.
-# import numpy as np
-# import pandas as pd
-# import time
-#
-# import matplotlib.pyplot as plt
-# from alpha_vantage.timeseries import TimeSeries
-#
-# import altair as alt
-#
-#
-# import requests
-#
-# from boto.s3.connection import S3Connection
-# key = S3Connection(os.environ['ALPHA_ADVANTAGE_API'])
-#
-# st.title('Pignon 2021 Data Incubator Interactive Stock Ticker')
-# st.write("Display Google stock daily closing price for a user-selected month & year:")
-#
-# user_input_stock_name = st.sidebar.text_input("Select a stock (e.g. GOOG, TSLA)", 'GOOG')
-#
-#
+st.title('Pignon 2021 Data Incubator Interactive Stock Ticker')
+st.write("Display Google stock daily closing price for a user-selected month & year:")
+
+user_input_stock_name = st.sidebar.text_input("Select a stock (e.g. GOOG, TSLA)", 'GOOG')
+
+
 # ts = TimeSeries(key, output_format='pandas')
 # # data, meta = ts.get_intraday('TSLA', interval='1min', outputsize='full')
 # # data, meta = ts.get_daily('GOOG', outputsize='full')
