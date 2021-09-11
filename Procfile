@@ -1,2 +1,1 @@
-web: python day_10_stock_ticker.py
-worker: python day_10_stock_ticker.py 
+web: sh setup.sh && streamlit run app.py
