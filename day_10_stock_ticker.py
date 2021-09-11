@@ -13,6 +13,9 @@ import altair as alt
 
 import requests
 
+from boto.s3.connection import S3Connection
+key = S3Connection(os.environ['ALPHA_ADVANTAGE_API'])
+
 st.title('Pignon 2021 Data Incubator Interactive Stock Ticker')
 st.write("Display Google stock daily closing price for a user-selected month & year:")
 
