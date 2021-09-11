@@ -19,10 +19,7 @@ import requests
 import os
 
 
-st.write("TEST APP INTO HEROKU")
-st.write("GET S3 CONNECTION")
 from boto.s3.connection import S3Connection
-st.write("INPUT KEY")
 key = (os.environ['ALPHA_ADVANTAGE_API'])
 
 st.title('Pignon 2021 Data Incubator Interactive Stock Ticker')
@@ -50,13 +47,19 @@ data['year'] = data.index.year
 data['month'] = data.index.month
 
 #year and month selection
+sorted_years=list(set(data['year']))
+sorted_years.sort()
 year_option = st.sidebar.selectbox(
     'Select a year',
-     set(data['year']))
+     # set(data['year']))
+     sorted_years)
 
+sorted_months=list(set(data['month']))
+sorted_months.sort()
 month_option = st.sidebar.selectbox(
     'Select a month',
-     set(data['month']))
+     # set(data['month']))
+     sorted_months)
 
 'You selected: ', month_option, year_option
 
