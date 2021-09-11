@@ -1,0 +1,7 @@
+requests
+numpy
+time
+matplotlib
+alpha_vantage
+boto
+altair
