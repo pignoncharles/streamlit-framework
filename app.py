@@ -16,6 +16,8 @@ from alpha_vantage.timeseries import TimeSeries
 
 import requests
 
+import os
+
 
 st.write("TEST APP INTO HEROKU")
 
