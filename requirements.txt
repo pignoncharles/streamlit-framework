@@ -5,3 +5,10 @@ python-dotenv
 altair
 bokeh
 requests
+
+numpy
+time
+matplotlib
+alpha_vantage
+boto
+altair
