@@ -6,7 +6,6 @@ altair
 bokeh
 requests
 
-numpy
 time
 matplotlib
 alpha_vantage
