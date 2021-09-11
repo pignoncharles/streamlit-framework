@@ -3,3 +3,4 @@ time
 matplotlib
 boto
 altair
+os

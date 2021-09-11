@@ -7,4 +7,3 @@ bokeh
 requests
 alpha_vantage
 boto
-os
