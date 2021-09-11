@@ -23,7 +23,7 @@ from boto.s3.connection import S3Connection
 key = (os.environ['ALPHA_ADVANTAGE_API'])
 
 st.title('Pignon 2021 Data Incubator Interactive Stock Ticker')
-st.write("Display Google stock daily closing price for a user-selected month & year:")
+st.write("Display user-input stock daily closing price for a user-selected month & year:")
 
 user_input_stock_name = st.sidebar.text_input("Select a stock (e.g. GOOG, TSLA)", 'GOOG')
 
